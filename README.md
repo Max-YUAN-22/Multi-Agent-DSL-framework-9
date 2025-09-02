@@ -87,7 +87,7 @@ python analysis/plot_metrics.py
 
 ### 📈 吞吐量
 
-![Throughput](results/throughput.png)
+![Throughput](results/*/throughput.png)
 吞吐量在有缓存时显著提升，证明 **Cache-aware 调度** 的加速效果。
 
 ---
