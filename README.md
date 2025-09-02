@@ -88,20 +88,26 @@ python analysis/plot_metrics.py
 ### 📈 吞吐量
 
 ![Throughput](results/ad_compare/throughput_ab.png)
+
+
 吞吐量在有缓存时显著提升，证明 **Cache-aware 调度** 的加速效果。
 
 ---
 
 ### ⏱️ 延迟分布
 
-![Latency](results/latency_hist.png)
+![Latency](results/ad_compare/latency_cdf_ab.png)
+
+
 延迟分布更集中，长尾明显减少，说明缓存机制降低了不确定性。
 
 ---
 
 ### 🧠 缓存命中率
 
-![Cache Hit](results/cache_hit_ma.png)
+![Cache Hit](results/ad_compare/cache_hit_ab.png)
+
+
 高并发下缓存命中率保持稳定，直接带动了吞吐量提升与延迟下降。
 
 ---
