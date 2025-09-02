@@ -1,6 +1,6 @@
 # 📘 Multi-Agent DSL Framework (SGLang-Inspired)
 
-本项目实现了一个 **多智能体领域特定语言（DSL）与运行时框架**，灵感来源于 **SGLang (NeurIPS 2024)**，并扩展至多智能体协作场景。框架包含可运行原型、实验与指标统计，适合科研复现、课程汇报与理论研究。
+本项目实现了一个 **多智能体领域特定语言（DSL）与运行时框架**，灵感来源于 **SGLang (NeurIPS 2024)**，并扩展至多智能体协作场景，框架包含可运行原型、实验与指标统计。
 
 ---
 ## 📄 Abstract
@@ -83,14 +83,14 @@ python experiments/demo_cache_reuse.py
 python analysis/plot_metrics.py
 ```
 
-会生成以下图表：
+会生成以下图表(其中A为无缓存，B为有缓存）：
 
 ### 📈 吞吐量
 
 ![Throughput](results/ad_compare/throughput_ab.png)
 
 
-吞吐量在有缓存时显著提升，证明 **Cache-aware 调度** 的加速效果。
+吞吐量在有缓存（A）时显著提升，证明 **Cache-aware 调度** 的加速效果。
 
 ---
 
